@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="MakeUpKartcart.com.SeleniumDeignsFramework.TestComponent.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
+    <classes>
+      <class name="MakeUpKartcart.com.SeleniumDeignsFramework.Tests.SubmitOrderTest">
+        <methods>
+          <include name="dependencyOrderHistory"/>
+          <include name="launchWebApplication"/>
+          <include name="submitOrders" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- MakeUpKartcart.com.SeleniumDeignsFramework.Tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Error Validation Test(failed)">
+    <classes>
+      <class name="MakeUpKartcart.com.SeleniumDeignsFramework.Tests.ErrorValidationTest">
+        <methods>
+          <include name="launchWebApplication"/>
+          <include name="loginErrorValidation"/>
+        </methods>
+      </class> <!-- MakeUpKartcart.com.SeleniumDeignsFramework.Tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

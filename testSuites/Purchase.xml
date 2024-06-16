@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	
+	<!-- Selective excution of test cases-->
+	<!--because of beforementhod / aftermethod test cases got faild and testng treats these are part of the groups so it failed -->
+	<!-- it can solved using alwaysRun=true in beforemethod and aftermethod-->
+	<groups>
+		<run>
+			<include name="PurchaseOrder"></include>
+		</run>
+	</groups>
+	<test thread-count="5" name="Submit Order Test">
+		<classes>
+			<class
+				name="MakeUpKartcart.com.SeleniumDeignsFramework.Tests.SubmitOrderTest" />
+	
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="Error Validation Test">
+		<classes>
+
+			<class
+				name="MakeUpKartcart.com.SeleniumDeignsFramework.Tests.ErrorValidationTest" />
+
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="App Test">
+		<classes>
+
+			<class
+				name="MakeUpKartcart.com.SeleniumDeignsFramework.Tests.AppTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
