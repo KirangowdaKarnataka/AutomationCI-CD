@@ -20,6 +20,7 @@ public class StandAloneTest {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
+		// thanks for your service
 		String expectedProduct = "ADIDAS ORIGINAL";
 
 		WebDriverManager.chromedriver().setup(); // chrome driver automatically downloadded into system based on chrome
