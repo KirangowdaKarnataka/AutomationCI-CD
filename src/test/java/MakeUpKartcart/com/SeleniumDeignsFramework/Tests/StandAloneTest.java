@@ -21,6 +21,8 @@ public class StandAloneTest {
 		// TODO Auto-generated method stub
 		
 		// thanks for your service
+		
+		//Help to find the check list 
 		String expectedProduct = "ADIDAS ORIGINAL";
 
 		WebDriverManager.chromedriver().setup(); // chrome driver automatically downloadded into system based on chrome
